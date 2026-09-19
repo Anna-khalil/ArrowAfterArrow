@@ -1,0 +1,147 @@
+"""
+一箭又一箭 - 关卡数据
+共 10 个关卡，难度递增。每个关卡均通过反向构造法设计，确保存在合法通关顺序。
+箭头格式：(row, col, direction)
+"""
+
+LEVELS = [
+    {
+        "id": 1,
+        "name": "初试身手",
+        "rows": 5,
+        "cols": 5,
+        "max_mistakes": 3,
+        "arrows": [
+            (0, 0, 'right'), (4, 4, 'left'), (2, 2, 'left'),
+            (0, 3, 'down'), (4, 1, 'up'),
+        ],
+    },
+    {
+        "id": 2,
+        "name": "渐入佳境",
+        "rows": 5,
+        "cols": 5,
+        "max_mistakes": 3,
+        "arrows": [
+            (0, 0, 'right'), (4, 4, 'up'), (2, 2, 'left'),
+            (0, 3, 'down'), (4, 1, 'up'), (1, 2, 'right'),
+            (3, 0, 'down'),
+        ],
+    },
+    {
+        "id": 3,
+        "name": "交错箭阵",
+        "rows": 6,
+        "cols": 6,
+        "max_mistakes": 3,
+        "arrows": [
+            (0, 0, 'right'), (5, 5, 'left'), (2, 2, 'down'),
+            (0, 4, 'down'), (5, 1, 'up'), (3, 4, 'right'),
+            (1, 1, 'up'), (4, 3, 'down'), (3, 5, 'up'),
+        ],
+    },
+    {
+        "id": 4,
+        "name": "层层解锁",
+        "rows": 6,
+        "cols": 6,
+        "max_mistakes": 3,
+        "arrows": [
+            (0, 0, 'right'), (5, 5, 'left'), (0, 4, 'down'),
+            (5, 1, 'up'), (2, 2, 'right'), (3, 3, 'left'),
+            (1, 1, 'up'), (4, 4, 'down'), (1, 4, 'right'),
+            (4, 1, 'left'), (2, 5, 'up'), (3, 0, 'down'),
+        ],
+    },
+    {
+        "id": 5,
+        "name": "迷阵初探",
+        "rows": 7,
+        "cols": 7,
+        "max_mistakes": 3,
+        "arrows": [
+            (0, 0, 'right'), (6, 6, 'left'), (0, 5, 'down'),
+            (6, 1, 'up'), (3, 3, 'right'), (4, 3, 'left'),
+            (1, 2, 'up'), (5, 4, 'down'), (2, 5, 'left'),
+            (5, 1, 'up'), (1, 6, 'up'), (2, 0, 'down'),
+            (4, 5, 'down'), (5, 0, 'down'),
+        ],
+    },
+    {
+        "id": 6,
+        "name": "霓虹箭阵",
+        "rows": 7,
+        "cols": 7,
+        "max_mistakes": 3,
+        "arrows": [
+            (5, 0, 'up'), (5, 2, 'down'), (1, 1, 'up'),
+            (5, 5, 'up'), (4, 3, 'up'), (1, 4, 'up'),
+            (6, 6, 'up'), (1, 5, 'right'), (0, 0, 'right'),
+            (4, 2, 'up'), (3, 0, 'left'), (6, 5, 'left'),
+            (3, 2, 'right'), (6, 0, 'down'),
+        ],
+    },
+    {
+        "id": 7,
+        "name": "箭雨纷飞",
+        "rows": 8,
+        "cols": 8,
+        "max_mistakes": 3,
+        "arrows": [
+            (0, 5, 'right'), (4, 1, 'down'), (5, 3, 'right'),
+            (6, 7, 'down'), (4, 2, 'down'), (4, 6, 'right'),
+            (2, 7, 'up'), (2, 6, 'up'), (4, 0, 'up'),
+            (0, 4, 'down'), (1, 4, 'down'), (2, 5, 'down'),
+            (5, 4, 'down'), (0, 3, 'up'), (1, 7, 'up'),
+            (3, 3, 'left'),
+        ],
+    },
+    {
+        "id": 8,
+        "name": "步步为营",
+        "rows": 8,
+        "cols": 8,
+        "max_mistakes": 3,
+        "arrows": [
+            (6, 5, 'right'), (7, 1, 'down'), (3, 1, 'left'),
+            (0, 3, 'down'), (0, 1, 'up'), (0, 5, 'up'),
+            (3, 4, 'right'), (3, 7, 'right'), (1, 6, 'left'),
+            (6, 6, 'right'), (1, 3, 'down'), (4, 7, 'down'),
+            (1, 7, 'up'), (0, 0, 'up'), (7, 7, 'down'),
+            (6, 0, 'down'), (2, 3, 'left'), (7, 2, 'up'),
+        ],
+    },
+    {
+        "id": 9,
+        "name": "终极挑战",
+        "rows": 8,
+        "cols": 8,
+        "max_mistakes": 3,
+        "arrows": [
+            (1, 2, 'up'), (1, 3, 'right'), (0, 1, 'right'),
+            (5, 4, 'down'), (5, 3, 'left'), (6, 2, 'left'),
+            (7, 5, 'up'), (0, 7, 'up'), (4, 2, 'left'),
+            (2, 7, 'left'), (0, 4, 'up'), (7, 6, 'up'),
+            (1, 1, 'down'), (5, 0, 'left'), (6, 0, 'down'),
+            (1, 6, 'up'), (7, 3, 'down'), (6, 5, 'up'),
+            (4, 0, 'up'), (0, 6, 'up'),
+        ],
+    },
+    {
+        "id": 10,
+        "name": "一箭封神",
+        "rows": 9,
+        "cols": 9,
+        "max_mistakes": 3,
+        "arrows": [
+            (8, 8, 'down'), (5, 6, 'up'), (5, 5, 'up'),
+            (4, 8, 'left'), (6, 5, 'right'), (2, 3, 'right'),
+            (6, 2, 'left'), (4, 4, 'down'), (7, 7, 'right'),
+            (3, 8, 'right'), (2, 1, 'left'), (3, 2, 'up'),
+            (0, 3, 'right'), (1, 7, 'right'), (6, 3, 'down'),
+            (5, 7, 'right'), (8, 7, 'down'), (4, 3, 'left'),
+            (8, 1, 'down'), (6, 0, 'down'), (7, 3, 'left'),
+            (0, 8, 'up'),
+        ],
+    },
+]
