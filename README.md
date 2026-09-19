@@ -100,9 +100,20 @@ ArrowAfterArrow/
 > 运行游戏后自行截图替换以下占位。
 
 - 开始界面
+
+  <img src="C:\Users\Anna\Desktop\开始界面.png" alt="开始界面" style="zoom:30%;" />
+
 - 游戏界面（基础玩法）
+
+  <img src="C:\Users\Anna\Desktop\关卡演示.gif" alt="关卡演示" style="zoom:33%;" />
+
 - 通关界面
+
+  <img src="C:\Users\Anna\Desktop\通关界面.png" alt="通关界面" style="zoom:33%;" />
+
 - 关卡选择界面
+
+  <img src="C:\Users\Anna\Desktop\关卡带锁版.png" alt="关卡带锁版" style="zoom:33%;" />
 
 ## 测试
 
@@ -114,6 +125,12 @@ python verify_levels.py
 ```
 
 该脚本会使用 AI 求解器验证所有 10 个关卡是否存在合法通关顺序。
+
+验证结果
+
+<img src="C:\Users\Anna\AppData\Roaming\Typora\typora-user-images\image-20260919101109629.png" alt="image-20260919101109629" style="zoom:50%;" />
+
+
 
 ## 许可证
 
