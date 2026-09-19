@@ -101,19 +101,21 @@ ArrowAfterArrow/
 
 - 开始界面
 
-  <img src="C:\Users\Anna\Desktop\开始界面.png" alt="开始界面" style="zoom:30%;" />
+  <img src="docs\images\开始界面.png" alt="开始界面" style="zoom:33%;" />
+
+  
 
 - 游戏界面（基础玩法）
 
-  <img src="C:\Users\Anna\Desktop\关卡演示.gif" alt="关卡演示" style="zoom:33%;" />
+  <img src="docs\images\关卡演示.gif" alt="关卡演示" style="zoom:33%;" />
 
 - 通关界面
 
-  <img src="C:\Users\Anna\Desktop\通关界面.png" alt="通关界面" style="zoom:33%;" />
+  <img src="docs\images\通关界面.png" alt="通关界面" style="zoom:33%;" />
 
 - 关卡选择界面
 
-  <img src="C:\Users\Anna\Desktop\关卡带锁版.png" alt="关卡带锁版" style="zoom:33%;" />
+  <img src="docs\images\关卡带锁版.png" alt="关卡带锁版" style="zoom:33%;" />
 
 ## 测试
 
@@ -128,7 +130,7 @@ python verify_levels.py
 
 验证结果
 
-<img src="C:\Users\Anna\AppData\Roaming\Typora\typora-user-images\image-20260919101109629.png" alt="image-20260919101109629" style="zoom:50%;" />
+<img src="docs\images\测试通过.png" alt="测试通过" style="zoom:50%;" />
 
 
 
